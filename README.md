@@ -65,17 +65,17 @@ E_init = np.loadtxt(“comsol_slice.csv”, delimiter=”,”, dtype=complex)
 
 Parameters
 
-Lx = 120e-6            # width of field
-wavelength = 4.05e-6   # mid-IR
-eps_r = 1.0            # refractive index squared
-z_vals = np.linspace(0, 55e-6, 2000)
+- Lx = 120e-6            # width of field
+- wavelength = 4.05e-6   # mid-IR
+- eps_r = 1.0            # refractive index squared
+- z_vals = np.linspace(0, 55e-6, 2000)
 
 Run propagation
 
-E_z, A_kx, kx = propagate_field_1d(
-E_init, Lx, z_vals, wavelength, eps_r,
-pad_factor=2,
-trim_edges=10     # optional
+- E_z, A_kx, kx = propagate_field_1d(
+- E_init, Lx, z_vals, wavelength, eps_r,
+- pad_factor=2,
+- trim_edges=10     # optional
 )
 
 ⸻
