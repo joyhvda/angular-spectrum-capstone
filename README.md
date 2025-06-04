@@ -40,15 +40,6 @@ pip install numpy matplotlib scipy pandas
 
 ⸻
 
-📂 File Contents
-	•	angular_spectrum_improved.ipynb — Main notebook with pipeline, plots, and diagnostics
-	•	angular_spectrum_v5.pdf — Formal writeup explaining theory, validation, and performance
-	•	pm60_comsol_comparison.png — ASM vs COMSOL output comparison
-	•	pm50_trimmed.png — Output slice showing trimmed vs untrimmed fields
-	•	talbot.jpeg — Talbot carpet simulation from periodic input
-
-⸻
-
 ⚙️ How It Works
 
 The field is expanded in plane waves via a Discrete Fourier Transform:
