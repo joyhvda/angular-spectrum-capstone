@@ -19,18 +19,18 @@ A high-speed Python tool for simulating free-space diffraction behind metasurfac
 Full-wave solvers like COMSOL capture near-field effects with high accuracy — but extending the field solution downstream (e.g. 50–100 μm) becomes computationally expensive. This project solves that bottleneck.
 
 By importing just a 1D complex field slice E(x, z=0) from COMSOL and applying a DFT-based propagation algorithm, we can:
-	•	Visualize focusing and diffraction in under 1 second
-	•	Extract spatial frequencies, periodicities, and resolution limits
-	•	Reproduce Talbot carpets from periodic input structures
+- Visualize focusing and diffraction in under 1 second
+- Extract spatial frequencies, periodicities, and resolution limits
+- Reproduce Talbot carpets from periodic input structures
 
 ⸻
 
 📈 Highlights
-	•	🚀 Fast: Propagates 2000 planes in <0.7s on a laptop
-	•	🧽 Edge Conditioning: Trim-and-extend to suppress Gibbs artifacts
-	•	🧠 Spectral Analysis: Peak detection yields resolution estimates, NA, and periodicities
-	•	🌀 Talbot Imaging: Reconstructs self-images of periodic gratings
-	•	📊 COMSOL Validation: RMS intensity error <3%, phase error <5 mrad
+- 🚀 Fast: Propagates 2000 planes in <0.7s on a laptop
+- 🧽 Edge Conditioning: Trim-and-extend to suppress Gibbs artifacts
+- 🧠 Spectral Analysis: Peak detection yields resolution estimates, NA, and periodicities
+- 🌀 Talbot Imaging: Reconstructs self-images of periodic gratings
+- 📊 COMSOL Validation: RMS intensity error <3%, phase error <5 mrad
 
 ⸻
 
@@ -83,8 +83,8 @@ trim_edges=10     # optional
 🧪 Validation Against COMSOL
 
 The reconstructed field agrees with COMSOL reference solutions within:
-	•	<3% RMS intensity error
-	•	<5 mrad RMS phase error
+- <3% RMS intensity error
+- <5 mrad RMS phase error
 
 With edge conditioning, spectral resolution improves and ringing is reduced.
 
@@ -106,9 +106,9 @@ At z = n · z_T, the field self-images.
 📊 Spectral Analysis
 
 We extract resolution metrics by analyzing the angular spectrum:
-	•	Mean peak spacing → spatial period
-	•	Max |kx| → Numerical Aperture
-	•	Peak phases → modal contributions
+- Mean peak spacing → spatial period
+- Max |kx| → Numerical Aperture
+- Peak phases → modal contributions
 
 
 ⸻
@@ -123,8 +123,8 @@ See angular_spectrum_v5.pdf in this repo for full details.
 🧠 Acknowledgments
 
 Thanks to:
-	•	Sreeja Purkait for COMSOL lens data
-	•	Dr. Viktor Podolskiy for insightful discussions
+- Sreeja Purkait for COMSOL lens data
+- Dr. Viktor Podolskiy for insightful discussions
 
 ⸻
 
